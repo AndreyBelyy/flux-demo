@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flux-demo
+  name: flux-demo
+  namespace: flux-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flux-demo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flux-demo
+    spec:
+      containers:
+      - image: cloudnatived/demo:hello
+        name: demo
+        resources: {}
+status: {}
