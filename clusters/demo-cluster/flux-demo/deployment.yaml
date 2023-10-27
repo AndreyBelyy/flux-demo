@@ -22,4 +22,6 @@ spec:
       - image: cloudnatived/demo:hello
         name: demo
         resources: {}
+      - image: nginx:latest
+        name: nginx
 status: {}
